@@ -2,6 +2,8 @@
 
 An AI-powered nutrition specialist bot that provides personalized nutrition advice and guidance based on medical and nutritional references.
 
+This project is a AI nutrition specialist bot deployed hugging-face that leverages LangChain for agent orchestration, LlamaParse/LlamaIndex for document parsing and indexing, ChromaDB/FAISS for vector search, and OpenAI/Llama APIs for LLM-powered responses. It is designed for interactive, evidence-based nutrition advice using advanced retrieval and NLP techniques.
+
 Check the live version in https://huggingface.co/spaces/daniela-veloz/nutrition_bot
 
 ## Overview
@@ -50,7 +52,47 @@ The bot can be interacted with through the Jupyter notebook interface. It's desi
 - Consider medical conditions and dietary restrictions
 - Offer evidence-based nutritional guidance
 
-## Note
+# Frameworks Used in the Nutrition Specialist Bot Project
 
-This bot is designed to provide general nutritional guidance and should not replace professional medical advice. Always consult with healthcare professionals for specific medical conditions or dietary requirements.
+## 1. LangChain
+  Core framework for building the AI agent, handling document loading, vector storage, retrieval, prompt management, and agent execution. Enables advanced retrieval-augmented generation (RAG) workflows and integrates with various LLMs and vector stores.
+
+---
+
+## 2. LlamaParse & LlamaIndex
+  Parsing and indexing documents, especially for extracting structured information from medical and nutritional references. LlamaParse is used for document parsing, and LlamaIndex for managing and querying document collections.
+
+---
+
+## 3. ChromaDB & FAISS 
+  Vector databases for storing and querying dense vector representations of documents, enabling efficient semantic search and retrieval.
+
+---
+
+## 4. OpenAI & Llama APIs
+  Accessing large language models (LLMs) for generating responses, embeddings, and performing advanced NLP tasks.
+
+---
+
+## 5. Google Colab
+  The notebook is designed to run in Google Colab, leveraging its environment for interactive development, file handling, and user data management.
+
+---
+
+## 6. HuggingFace (CrossEncoder)
+  Used for reranking and cross-encoding in retrieval pipelines, improving the relevance of retrieved documents.
+
+---
+
+## 7. Pydantic
+  Data validation and structured data management.
+
+---
+
+## 8. Other Utilities
+  General Python utilities for file handling, environment management, async operations, progress bars, etc.
+
+
+
+
 
